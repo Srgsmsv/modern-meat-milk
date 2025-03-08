@@ -93,7 +93,7 @@ const Products = () => {
         {
           title: "CreamTexture System",
           description: "Премиальная стабилизирующая смесь для оптимальной текстуры и ощущения во рту в йогуртах, кремах и десертах.",
-          image: "https://images.unsplash.com/photo-1628201081326-08afb393ee07?auto=format&fit=crop&q=80&w=2340",
+          image: "https://plus.unsplash.com/premium_photo-1667587245819-2bea7a93e7a1?q=80&w=4140&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           category: "Стабилизатор"
         },
         {
@@ -105,7 +105,7 @@ const Products = () => {
         {
           title: "DairyBlend Fortifier",
           description: "Система для укрепления молочных продуктов с необходимыми витаминами и минералами.",
-          image: "https://images.unsplash.com/photo-1563735784991-4df5581ee0a6?auto=format&fit=crop&q=80&w=2340",
+          image: "https://plus.unsplash.com/premium_photo-1683121825174-ff1620a5e387?q=80&w=4325&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
           category: "Укрепление"
         }
       ]
