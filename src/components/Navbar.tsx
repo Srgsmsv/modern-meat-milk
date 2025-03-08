@@ -81,7 +81,7 @@ const Navbar = () => {
             {["Домой", "О нас", "Продукты", "Преимущества", "Контакты"].map((item) => (
               <a
                 key={item}
-                href={`#${item.toLowerCase()}`}
+                href={`#${item}`}
                 className="px-6 py-3 text-gray-800 hover:bg-gray-50 hover:text-brand-red transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
