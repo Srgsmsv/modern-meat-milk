@@ -69,9 +69,9 @@ const Contact = () => {
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
         >
-          <h2 className="section-title mx-auto">Contact Us</h2>
+          <h2 className="section-title mx-auto">Свяжитесь с нами</h2>
           <p className="section-subtitle">
-            Have questions or ready to discuss your specific needs? Reach out to our team.
+            Есть вопросы или готовы к обсуждению заинтересовавшей вас продукции?? Свяжитесь с нашей командой.
           </p>
         </motion.div>
 
@@ -88,13 +88,13 @@ const Contact = () => {
             <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
               <div className="bg-gradient-to-r from-brand-red to-brand-gold h-3"></div>
               <div className="p-8">
-                <h3 className="text-2xl font-bold mb-6">Send Us a Message</h3>
+                <h3 className="text-2xl font-bold mb-6">Отправить нам письмо</h3>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                        Full Name *
+                        Полное Имя *
                       </label>
                       <input
                         id="name"
@@ -110,7 +110,7 @@ const Contact = () => {
 
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                        Email Address *
+                        Email Адрес *
                       </label>
                       <input
                         id="email"
@@ -128,7 +128,7 @@ const Contact = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">
-                        Company Name *
+                        Название Компании *
                       </label>
                       <input
                         id="company"
@@ -138,13 +138,13 @@ const Contact = () => {
                         value={formData.company}
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-red/20 focus:border-brand-red transition-colors"
-                        placeholder="Your Company"
+                        placeholder="Ваша компания"
                       />
                     </div>
 
                     <div>
                       <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
-                        Phone Number
+                        Номер Телефона
                       </label>
                       <input
                         id="phone"
@@ -153,14 +153,14 @@ const Contact = () => {
                         value={formData.phone}
                         onChange={handleChange}
                         className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-red/20 focus:border-brand-red transition-colors"
-                        placeholder="+1 (555) 000-0000"
+                        placeholder="+375 (44) 111-0000"
                       />
                     </div>
                   </div>
 
                   <div>
                     <label htmlFor="industry" className="block text-sm font-medium text-gray-700 mb-1">
-                      Industry *
+                      Направление деятельности *
                     </label>
                     <select
                       id="industry"
@@ -170,16 +170,16 @@ const Contact = () => {
                       onChange={handleChange}
                       className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-red/20 focus:border-brand-red transition-colors"
                     >
-                      <option value="meat">Meat Processing</option>
-                      <option value="dairy">Dairy Production</option>
-                      <option value="both">Both Meat & Dairy</option>
-                      <option value="other">Other Food Industry</option>
+                      <option value="meat">Мясное производство</option>
+                      <option value="dairy">Молочное производство</option>
+                      <option value="both">Оба Мясное & Молочное</option>
+                      <option value="other">Другое производство</option>
                     </select>
                   </div>
 
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                      Your Message *
+                      Ваше сообщение *
                     </label>
                     <textarea
                       id="message"
@@ -189,7 +189,7 @@ const Contact = () => {
                       value={formData.message}
                       onChange={handleChange}
                       className="w-full px-4 py-3 rounded-md border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-red/20 focus:border-brand-red transition-colors resize-none"
-                      placeholder="Tell us about your specific needs or questions..."
+                      placeholder="Расскажите об интересующих вас вопросах..."
                     ></textarea>
                   </div>
 
@@ -202,7 +202,7 @@ const Contact = () => {
                         loading ? "opacity-80 cursor-not-allowed" : "hover:shadow-lg hover:translate-y-[-2px]"
                       )}
                     >
-                      {loading ? "Sending..." : "Send Message"}
+                      {loading ? "Отправляется..." : "Отправить письмо"}
                     </button>
                   </div>
                 </form>
@@ -221,29 +221,29 @@ const Contact = () => {
             className="space-y-8"
           >
             <div>
-              <h3 className="text-2xl font-bold mb-4">Our Offices</h3>
+              <h3 className="text-2xl font-bold mb-4">Наши офисы</h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="bg-white p-6 rounded-xl shadow-md">
-                  <h4 className="font-bold mb-2">Main Headquarters</h4>
+                  <h4 className="font-bold mb-2">Главный офис</h4>
                   <address className="not-italic text-gray-600">
-                    123 Food Tech Avenue<br />
-                    New York, NY 10001<br />
-                    United States
+                    123 проспект Независимости<br />
+                    Минск, РБ 10001<br />
+                    Республика Беларусь
                   </address>
                   <div className="mt-3 flex items-center text-brand-red">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <path d="M3 5C3 3.89543 3.89543 3 5 3H8.27924C8.70967 3 9.09181 3.27543 9.22792 3.68377L10.7257 8.17721C10.8831 8.64932 10.6694 9.16531 10.2243 9.38787L7.96701 10.5165C9.06925 12.9612 11.0388 14.9308 13.4835 16.033L14.6121 13.7757C14.8347 13.3306 15.3507 13.1169 15.8228 13.2743L20.3162 14.7721C20.7246 14.9082 21 15.2903 21 15.7208V19C21 20.1046 20.1046 21 19 21H18C9.71573 21 3 14.2843 3 6V5Z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                     </svg>
-                    <span className="ml-2">+1 (212) 555-0123</span>
+                    <span className="ml-2">+375 (44) 11-2222</span>
                   </div>
                 </div>
 
                 <div className="bg-white p-6 rounded-xl shadow-md">
-                  <h4 className="font-bold mb-2">European Office</h4>
+                  <h4 className="font-bold mb-2">Офис РФ</h4>
                   <address className="not-italic text-gray-600">
-                    42 Research Boulevard<br />
-                    Berlin, 10115<br />
-                    Germany
+                    42 проспект Победы<br />
+                    Москва, 10115<br />
+                    РФ
                   </address>
                   <div className="mt-3 flex items-center text-brand-red">
                     <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -256,7 +256,7 @@ const Contact = () => {
             </div>
 
             <div className="bg-white p-8 rounded-xl shadow-md">
-              <h3 className="text-xl font-bold mb-4">Get In Touch</h3>
+              <h3 className="text-xl font-bold mb-4">Свяжитесь с нами</h3>
               <div className="space-y-4">
                 <div className="flex items-start">
                   <div className="flex-shrink-0 mt-1">
@@ -265,7 +265,7 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="ml-4">
-                    <h4 className="font-medium">Email Us</h4>
+                    <h4 className="font-medium">Отправьте нам Email</h4>
                     <a href="mailto:info@foodtechadditives.com" className="text-gray-600 hover:text-brand-red transition-colors">
                       info@foodtechadditives.com
                     </a>
@@ -279,9 +279,9 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="ml-4">
-                    <h4 className="font-medium">Call Us</h4>
+                    <h4 className="font-medium">Позвоните нам</h4>
                     <a href="tel:+1-800-123-4567" className="text-gray-600 hover:text-brand-red transition-colors">
-                      +1 800-123-4567 (Toll-free)
+                      +374 44 111 0000(А1)
                     </a>
                   </div>
                 </div>
@@ -294,9 +294,9 @@ const Contact = () => {
                     </svg>
                   </div>
                   <div className="ml-4">
-                    <h4 className="font-medium">Visit Our Lab</h4>
+                    <h4 className="font-medium">Посетите нашу лабораторию</h4>
                     <p className="text-gray-600">
-                      Schedule a visit to our research facility for a firsthand look at our innovation processes.
+                      Запланируйте визит в наш исследовательский центр, чтобы лично ознакомиться с нашими инновационными процессами.
                     </p>
                   </div>
                 </div>

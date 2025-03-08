@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="text-xl font-bold text-brand-red">NutriTech Additives</h3>
             <p className="text-gray-600">
-              Premium complex food additives for the meat and dairy industry, enhancing flavor, texture, and preservation.
+              Премиальные комплексные пищевые добавки для мясной и молочной промышленности, улучшающие вкус, текстуру и срок хранения.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-500 hover:text-brand-red transition-colors">
@@ -29,7 +29,7 @@ const Footer = () => {
 
           {/* Quick Links */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-gray-800">Quick Links</h3>
+            <h3 className="text-lg font-semibold text-gray-800">Быстрые ссылки</h3>
             <ul className="space-y-2">
               <li><a href="#Домой" className="text-gray-600 hover:text-brand-red transition-colors">Домой</a></li>
               <li><a href="#О нас" className="text-gray-600 hover:text-brand-red transition-colors">О нас</a></li>
@@ -41,27 +41,27 @@ const Footer = () => {
 
           {/* Products */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-gray-800">Our Products</h3>
+            <h3 className="text-lg font-semibold text-gray-800">Наши продукты</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-600 hover:text-brand-red transition-colors">Meat Additives</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-brand-red transition-colors">Dairy Solutions</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-brand-red transition-colors">Flavor Enhancers</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-brand-red transition-colors">Preservatives</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-brand-red transition-colors">Texture Improvers</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-brand-red transition-colors">Мясные добавки</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-brand-red transition-colors">Молочные решения</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-brand-red transition-colors">Вкусовые добавки</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-brand-red transition-colors">Консерванты</a></li>
+              <li><a href="#" className="text-gray-600 hover:text-brand-red transition-colors">Усилители вкуса</a></li>
             </ul>
           </div>
 
           {/* Contact Info */}
           <div className="space-y-4">
-            <h3 className="text-lg font-semibold text-gray-800">Contact Us</h3>
+            <h3 className="text-lg font-semibold text-gray-800">Свяжитесь с нами</h3>
             <div className="space-y-3">
               <div className="flex items-start space-x-3">
                 <MapPin className="text-brand-red mt-1" size={18} />
-                <span className="text-gray-600">123 Food Tech Park, Innovation Street, Industry City</span>
+                <span className="text-gray-600">123 пр-т Независимости, Минск</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="text-brand-red" size={18} />
-                <span className="text-gray-600">+1 (555) 123-4567</span>
+                <span className="text-gray-600">+375 (44) 11-2222</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="text-brand-red" size={18} />
