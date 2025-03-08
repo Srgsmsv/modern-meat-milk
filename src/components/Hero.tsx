@@ -4,8 +4,8 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section 
-      id="home"
+    <section
+      id="Домой"
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-white pt-16"
     >
       <div className="absolute inset-0 z-0">
@@ -16,14 +16,14 @@ const Hero = () => {
 
       <div className="container mx-auto px-6 z-10">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="w-full md:w-1/2 space-y-6"
           >
             <div>
-              <motion.span 
+              <motion.span
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5 }}
@@ -31,47 +31,47 @@ const Hero = () => {
               >
                 Innovative Food Solutions
               </motion.span>
-              <motion.h1 
+              <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.2 }}
                 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight"
               >
-                Advanced Additives for <span className="text-brand-red">Meat</span> & <span className="gold-gradient">Dairy</span> Industries
+                Качественные добавки для  <span className="text-brand-red">Мясной</span> и <span className="gold-gradient">Молочной</span> Продукции
               </motion.h1>
             </div>
-            
-            <motion.p 
+
+            <motion.p
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
               className="text-lg text-gray-600 max-w-lg"
             >
-              Enhancing flavor, texture, and preservation with our premium complex food additives. Scientifically formulated for exceptional results.
+              Улучшение вкуса, текстуры и сохранности с нашими комплексными пищевыми добавками премиум-класса. Научно разработано для исключительных результатов.
             </motion.p>
-            
-            <motion.div 
+
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.6 }}
               className="flex flex-wrap gap-4"
             >
-              <a 
-                href="#products" 
+              <a
+                href="#products"
                 className="px-6 py-3 bg-brand-red text-white font-medium rounded-md shadow-lg hover:shadow-xl transition-all duration-300 hover:translate-y-[-2px]"
               >
-                Explore Products
+                Изучить продукцию
               </a>
-              <a 
-                href="#contact" 
+              <a
+                href="#contact"
                 className="px-6 py-3 border border-gray-300 text-gray-800 font-medium rounded-md hover:bg-gray-50 transition-all duration-300"
               >
-                Contact Us
+                Свяжитесь с нами
               </a>
             </motion.div>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.5 }}
@@ -81,9 +81,9 @@ const Hero = () => {
               <div className="absolute inset-0 rounded-full bg-gradient-to-br from-brand-red/20 to-brand-gold/20 blur-3xl animate-pulse"></div>
               <div className="absolute inset-4 bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl"></div>
               <div className="absolute inset-0 flex items-center justify-center">
-                <img 
-                  src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&q=80&w=2340" 
-                  alt="Premium food additives for meat and dairy industries" 
+                <img
+                  src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&q=80&w=2340"
+                  alt="Premium food additives for meat and dairy industries"
                   className="w-4/5 h-4/5 object-cover rounded-2xl shadow-2xl"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-white p-4 rounded-2xl shadow-lg">
@@ -95,13 +95,13 @@ const Hero = () => {
           </motion.div>
         </div>
       </div>
-      
+
       <div className="absolute bottom-10 left-0 right-0 flex justify-center">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ 
-            duration: 0.5, 
+          transition={{
+            duration: 0.5,
             delay: 1,
             repeat: Infinity,
             repeatType: "reverse",

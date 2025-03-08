@@ -17,7 +17,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <header 
+    <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-all duration-300 ease-in-out px-6 md:px-10",
         isScrolled ? "py-3 bg-white/90 backdrop-blur-md shadow-md" : "py-5 bg-transparent"
@@ -33,10 +33,10 @@ const Navbar = () => {
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex items-center gap-8">
-          {["Home", "About", "Products", "Benefits", "Contact"].map((item) => (
-            <a 
-              key={item} 
-              href={`#${item.toLowerCase()}`}
+          {["Домой", "О нас", "Продукты", "Преимущества", "Контакты"].map((item) => (
+            <a
+              key={item}
+              href={`#${item}`}
               className="relative text-gray-800 font-medium hover:text-brand-red transition-colors duration-300 py-2"
             >
               {item}
@@ -46,7 +46,7 @@ const Navbar = () => {
         </nav>
 
         {/* Mobile Menu Button */}
-        <button 
+        <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           className="md:hidden text-gray-800 focus:outline-none"
           aria-label="Toggle mobile menu"
@@ -70,7 +70,7 @@ const Navbar = () => {
 
       {/* Mobile Menu Dropdown */}
       {isMobileMenuOpen && (
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           exit={{ opacity: 0, y: -20 }}
@@ -78,9 +78,9 @@ const Navbar = () => {
           className="md:hidden absolute top-full left-0 right-0 bg-white shadow-lg border-t border-gray-100"
         >
           <div className="flex flex-col py-4">
-            {["Home", "About", "Products", "Benefits", "Contact"].map((item) => (
-              <a 
-                key={item} 
+            {["Домой", "О нас", "Продукты", "Преимущества", "Контакты"].map((item) => (
+              <a
+                key={item}
                 href={`#${item.toLowerCase()}`}
                 className="px-6 py-3 text-gray-800 hover:bg-gray-50 hover:text-brand-red transition-colors duration-200"
                 onClick={() => setIsMobileMenuOpen(false)}

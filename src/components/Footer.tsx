@@ -26,19 +26,19 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          
+
           {/* Quick Links */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-gray-800">Quick Links</h3>
             <ul className="space-y-2">
-              <li><a href="#home" className="text-gray-600 hover:text-brand-red transition-colors">Home</a></li>
-              <li><a href="#about" className="text-gray-600 hover:text-brand-red transition-colors">About Us</a></li>
-              <li><a href="#products" className="text-gray-600 hover:text-brand-red transition-colors">Products</a></li>
-              <li><a href="#benefits" className="text-gray-600 hover:text-brand-red transition-colors">Benefits</a></li>
-              <li><a href="#contact" className="text-gray-600 hover:text-brand-red transition-colors">Contact</a></li>
+              <li><a href="#Домой" className="text-gray-600 hover:text-brand-red transition-colors">Домой</a></li>
+              <li><a href="#О нас" className="text-gray-600 hover:text-brand-red transition-colors">О нас</a></li>
+              <li><a href="#Продукты" className="text-gray-600 hover:text-brand-red transition-colors">Продукты</a></li>
+              <li><a href="#Преимущества" className="text-gray-600 hover:text-brand-red transition-colors">Преимущества</a></li>
+              <li><a href="#Контакты" className="text-gray-600 hover:text-brand-red transition-colors">Контакты</a></li>
             </ul>
           </div>
-          
+
           {/* Products */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-gray-800">Our Products</h3>
@@ -50,7 +50,7 @@ const Footer = () => {
               <li><a href="#" className="text-gray-600 hover:text-brand-red transition-colors">Texture Improvers</a></li>
             </ul>
           </div>
-          
+
           {/* Contact Info */}
           <div className="space-y-4">
             <h3 className="text-lg font-semibold text-gray-800">Contact Us</h3>
@@ -70,7 +70,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="border-t border-gray-200 pt-8 mt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-600 text-sm">

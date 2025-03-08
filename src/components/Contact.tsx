@@ -9,7 +9,7 @@ const Contact = () => {
   const isInView = useInView(ref, { once: true, amount: 0.1 });
   const controls = useAnimation();
   const { toast } = useToast();
-  
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -18,24 +18,24 @@ const Contact = () => {
     message: '',
     industry: 'meat',
   });
-  
+
   const [loading, setLoading] = useState(false);
-  
+
   useEffect(() => {
     if (isInView) {
       controls.start("visible");
     }
   }, [isInView, controls]);
-  
+
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
-  
+
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
-    
+
     // Simulate form submission
     setTimeout(() => {
       setLoading(false);
@@ -43,7 +43,7 @@ const Contact = () => {
         title: "Message sent successfully",
         description: "Our team will get back to you shortly.",
       });
-      
+
       // Reset form
       setFormData({
         name: '',
@@ -55,11 +55,11 @@ const Contact = () => {
       });
     }, 1500);
   };
-  
+
   return (
-    <section id="contact" className="py-20 bg-gray-50" ref={ref}>
+    <section id="Контакты" className="py-20 bg-gray-50" ref={ref}>
       <div className="container mx-auto px-6">
-        <motion.div 
+        <motion.div
           variants={{
             hidden: { opacity: 0, y: 20 },
             visible: { opacity: 1, y: 0 }
@@ -74,9 +74,9 @@ const Contact = () => {
             Have questions or ready to discuss your specific needs? Reach out to our team.
           </p>
         </motion.div>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <motion.div 
+          <motion.div
             variants={{
               hidden: { opacity: 0, x: -30 },
               visible: { opacity: 1, x: 0 }
@@ -89,7 +89,7 @@ const Contact = () => {
               <div className="bg-gradient-to-r from-brand-red to-brand-gold h-3"></div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold mb-6">Send Us a Message</h3>
-                
+
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
@@ -107,7 +107,7 @@ const Contact = () => {
                         placeholder="John Doe"
                       />
                     </div>
-                    
+
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
                         Email Address *
@@ -124,7 +124,7 @@ const Contact = () => {
                       />
                     </div>
                   </div>
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div>
                       <label htmlFor="company" className="block text-sm font-medium text-gray-700 mb-1">
@@ -141,7 +141,7 @@ const Contact = () => {
                         placeholder="Your Company"
                       />
                     </div>
-                    
+
                     <div>
                       <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
                         Phone Number
@@ -157,7 +157,7 @@ const Contact = () => {
                       />
                     </div>
                   </div>
-                  
+
                   <div>
                     <label htmlFor="industry" className="block text-sm font-medium text-gray-700 mb-1">
                       Industry *
@@ -176,7 +176,7 @@ const Contact = () => {
                       <option value="other">Other Food Industry</option>
                     </select>
                   </div>
-                  
+
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                       Your Message *
@@ -192,7 +192,7 @@ const Contact = () => {
                       placeholder="Tell us about your specific needs or questions..."
                     ></textarea>
                   </div>
-                  
+
                   <div>
                     <button
                       type="submit"
@@ -209,8 +209,8 @@ const Contact = () => {
               </div>
             </div>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             variants={{
               hidden: { opacity: 0, x: 30 },
               visible: { opacity: 1, x: 0 }
@@ -237,7 +237,7 @@ const Contact = () => {
                     <span className="ml-2">+1 (212) 555-0123</span>
                   </div>
                 </div>
-                
+
                 <div className="bg-white p-6 rounded-xl shadow-md">
                   <h4 className="font-bold mb-2">European Office</h4>
                   <address className="not-italic text-gray-600">
@@ -254,7 +254,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            
+
             <div className="bg-white p-8 rounded-xl shadow-md">
               <h3 className="text-xl font-bold mb-4">Get In Touch</h3>
               <div className="space-y-4">
@@ -271,7 +271,7 @@ const Contact = () => {
                     </a>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="flex-shrink-0 mt-1">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-brand-gold">
@@ -285,7 +285,7 @@ const Contact = () => {
                     </a>
                   </div>
                 </div>
-                
+
                 <div className="flex items-start">
                   <div className="flex-shrink-0 mt-1">
                     <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-brand-red">
@@ -301,7 +301,7 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="mt-6 flex gap-4">
                 <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-gray-100 hover:bg-brand-red hover:text-white transition-colors duration-300">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
