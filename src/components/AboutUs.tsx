@@ -6,20 +6,20 @@ const AboutUs = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
   const mainControls = useAnimation();
-  
+
   useEffect(() => {
     if (isInView) {
       mainControls.start("visible");
     }
   }, [isInView, mainControls]);
-  
+
   return (
     <section id="about" className="py-20 bg-white relative overflow-hidden" ref={ref}>
       <div className="absolute top-0 right-0 w-1/3 h-1/3 bg-brand-gold/5 rounded-bl-full"></div>
       <div className="absolute bottom-0 left-0 w-1/4 h-1/4 bg-brand-red/5 rounded-tr-full"></div>
-      
+
       <div className="container mx-auto px-6 relative z-10">
-        <motion.div 
+        <motion.div
           variants={{
             hidden: { opacity: 0, y: 20 },
             visible: { opacity: 1, y: 0 }
@@ -29,14 +29,14 @@ const AboutUs = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="text-center mb-16"
         >
-          <h2 className="section-title mx-auto">About Our Company</h2>
+          <h2 className="section-title mx-auto">О нашей компании</h2>
           <p className="section-subtitle">
             Setting new standards in food additive technology for over 15 years
           </p>
         </motion.div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <motion.div 
+          <motion.div
             variants={{
               hidden: { opacity: 0, x: -30 },
               visible: { opacity: 1, x: 0 }
@@ -53,7 +53,7 @@ const AboutUs = () => {
             <p className="text-gray-600">
               We pride ourselves on our commitment to sustainability, quality, and customer satisfaction. Every product we develop undergoes rigorous testing to ensure it meets the highest standards of safety and effectiveness.
             </p>
-            
+
             <div className="pt-4 grid grid-cols-2 gap-6">
               <div className="flex flex-col">
                 <span className="text-3xl font-bold text-brand-red">15+</span>
@@ -73,8 +73,8 @@ const AboutUs = () => {
               </div>
             </div>
           </motion.div>
-          
-          <motion.div 
+
+          <motion.div
             variants={{
               hidden: { opacity: 0, x: 30 },
               visible: { opacity: 1, x: 0 }
@@ -86,11 +86,11 @@ const AboutUs = () => {
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-brand-gold/20 rounded-tl-3xl"></div>
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-brand-red/20 rounded-br-3xl"></div>
-              
+
               <div className="relative bg-white shadow-xl rounded-2xl overflow-hidden">
-                <img 
-                  src="https://images.unsplash.com/photo-1574789048690-30587bc576f6?auto=format&fit=crop&q=80&w=2340" 
-                  alt="Our laboratory" 
+                <img
+                  src="https://i.pinimg.com/736x/b1/ad/dd/b1addde8a887dca929d4b6178d8c427b.jpg"
+                  alt="Наша лаборатория"
                   className="w-full h-[400px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
@@ -103,8 +103,8 @@ const AboutUs = () => {
             </div>
           </motion.div>
         </div>
-        
-        <motion.div 
+
+        <motion.div
           variants={{
             hidden: { opacity: 0, y: 20 },
             visible: { opacity: 1, y: 0 }
@@ -125,7 +125,7 @@ const AboutUs = () => {
               <h4 className="text-xl font-bold mb-2">Quality Guarantee</h4>
               <p className="text-gray-600 text-sm">All our products undergo strict quality testing to ensure consistency and performance.</p>
             </div>
-            
+
             <div className="text-center p-4">
               <div className="w-16 h-16 bg-brand-gold/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -135,7 +135,7 @@ const AboutUs = () => {
               <h4 className="text-xl font-bold mb-2">Innovation Focus</h4>
               <p className="text-gray-600 text-sm">We continuously research and develop new solutions to meet evolving industry needs.</p>
             </div>
-            
+
             <div className="text-center p-4">
               <div className="w-16 h-16 bg-brand-red/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
