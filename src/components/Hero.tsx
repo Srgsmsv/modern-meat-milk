@@ -57,13 +57,13 @@ const Hero = () => {
               className="flex flex-wrap gap-4"
             >
               <a
-                href="#products"
+                href="#Продукты"
                 className="px-6 py-3 bg-brand-red text-white font-medium rounded-md shadow-lg hover:shadow-xl transition-all duration-300 hover:translate-y-[-2px]"
               >
                 Изучить продукцию
               </a>
               <a
-                href="#contact"
+                href="#Контакты"
                 className="px-6 py-3 border border-gray-300 text-gray-800 font-medium rounded-md hover:bg-gray-50 transition-all duration-300"
               >
                 Свяжитесь с нами
